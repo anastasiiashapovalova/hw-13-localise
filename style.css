@@ -387,6 +387,10 @@ body {
     display: flex;
 }
 
+.additionally-inner {
+    align-items: center;
+}
+
 .additionally-inner-text {
     font-weight: 600;
     font-size: 35px;
@@ -663,28 +667,247 @@ body {
         background-size: 50%;
     }
 
-    .intro-title {
+    .intro-title,
+    .partners-title,
+    .desc-title {
         font-size: 46px;
         line-height: 65px;
         width: 480px;
     }
 
-    .intro-text {
+    .desc-title {
+        text-align: center;
+    }
+
+    .partners-title {
+        width: auto;
+        max-width: 700px;
+    }
+
+    .intro-text,
+    .desc-text {
         font-size: 20px;
         line-height: 30px;
         width: 400px;
+    }
+
+    .desc-text {
+        width: auto;
+        max-width: 500px;
     }
 
     .intro-conteiner {
         flex-wrap: wrap;
     }
 
+    .partners-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .partners {
+        padding: 78px 0 91px 0;
+    }
+
+    .desc-block {
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        justify-content: space-evenly;
+    }
+    
+    .desc-block-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .desc-block-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .localise-title,
+    .optimization-title {
+        width: auto;
+        min-width: 350px;
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .localise-card {
+        margin-right: 0;
+    }
+
+    .localise-cards {
+        justify-content: center;
+    }
+
+    .localise-card-text {
+       max-width: 320px;
+    }
+
+    .localise {
+        padding-top: 60px;
+        padding-bottom: 46px;
+    }
+
+    .optimization {
+        padding-top: 77px;
+        padding-bottom: 94px;
+    }
+
+    .optimization-cards {
+        justify-content: center;
+    }
+
+    .optimization-card {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .optimization-card-image,
+    .optimization-card-link {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .optimization-card-title,
+    .optimization-card-text,
+    .optimization-card-link {
+        text-align: center;
+        width: auto;
+        min-width: 350px;
+    }
+    
+    .quote-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .quote-image {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .quote-text {
+        font-size: 23px;
+        line-height: 34px;
+        width: auto;
+        min-width: 350px;
+    }
+
+    .additionally-inner, 
+    .additionally-inner-second,
+    .additionally-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .additionally-inner-text {
+        font-size: 30px;
+        line-height: 45px;
+        width: auto;
+        max-width: 700px;
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    .additionally-inner-img {
+        margin-right: 0;
+    }
+
+    .additionally-inner-second {
+        flex-direction: column;
+        align-content: space-between;
+        padding-left: 35px;
+    }
+
+    .additionally-card-one,
+    .additionally-card-two {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .additionally-card-one {
+        margin-bottom: 20px;
+    }
+
+    .other-title,
+    .else-title {
+        font-size: 48px;
+        line-height: 65px;
+        width: auto;
+        max-width: 790px;
+        margin-bottom: 20px;
+    }
+
+    .other {
+        padding-top: 85px;
+        padding-bottom: 82px;
+    }
+
+    .other-image {
+        display: block;
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .other-text {
+        width: auto;
+        max-width: 539px;
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .else {
+        padding-top: 62px;
+        padding-bottom: 76px;
+    }
+
+    .footer-wrap {
+        flex-wrap: wrap;
+    }
+
+    .footer-card {
+        margin-right: 0;
+    }
+
+    .footer-main-card {
+        margin-bottom: 20px;
+    }
+
+    .copyright-text.first {
+        width: auto;
+        max-width: 290px;
+        margin-right: 10px;
+    }
+    
+    .copyright-text-wrap {
+        margin-right: 0;
+    }
+
+    .copyright-text {
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
 
 @media (max-width: 768px) {
     .nav-link {
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .additionally-card-one {
+        margin-bottom: 10px;
     }
 
     .header-button.first {
@@ -703,7 +926,9 @@ body {
         background-image: none;
     }
 
-    .intro-title {
+    .intro-title,
+    .partners-title,
+    .desc-title {
         width: 320px;
         font-size: 35px;
         line-height: 53px;
@@ -711,12 +936,17 @@ body {
         margin-bottom: 30px;
     }
 
-    .intro-text {
+    .intro-text,
+    .desc-text {
         width: 340px;
         font-size: 15px;
         line-height: 22px;
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .desc-text {
+        text-align: center;
     }
 
     .intro-wrap {
@@ -751,5 +981,48 @@ body {
         line-height: 30px;
         padding: 0 11px 0 12px;
     }
-}
 
+    .desc {
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+
+    .desc-block-wrap {
+        align-items: center;
+    }
+
+    .optimization-card-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .quote-text,
+    .else-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .quote {
+        padding-bottom: 55px;
+    }
+
+    .other-title,
+    .else-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .other-image {
+        max-width: 350px;
+    }
+    
+    .footer-wrap {
+        margin-bottom: 24px;
+        padding-bottom: 46px;
+    }
+
+    .footer {
+        padding-bottom: 24px;
+        padding-top: 46px;
+    }
+}
